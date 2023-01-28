@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Freader {
     // In main fnx using exception handling since filestreams throws exception
-        public static void main(String[] args) throws IOException{
+        public static void main(String[] args) throws Exception{
         //  Creating object of file reader and providing the file path as an iargument 
         //  in a constructor
         FileReader fr= new FileReader("writeONfile.txt");

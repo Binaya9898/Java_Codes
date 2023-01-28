@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class CreateTable{
     public static void main(String[] args) throws Exception {
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        Class.forName("com.mysql.jdbc.Driver");
         String url="jdbc:mysql://localhost:3306/mydatabase";
         String username="root";
         String password="";
