@@ -1,22 +1,26 @@
-/**
- * GenericFnx
- */
+ class Generic{
+
+     <t> void getArr(t[] array){
+        for(int i=0;i<array.length;i++){
+            System.out.println(array[i]);
+        }
+
+    }
+}
 public class GenericFnx {
-
-    public <t>void findSum( t a,t b){
-        System.out.println(a);
-
-        // System.out.println(b);
-    }
-
     public static void main(String[] args) {
-        GenericFnx gfx=new GenericFnx();
-        gfx.findSum(Integer.valueOf(20) ,Integer.valueOf(20));
-        gfx.findSum(String.valueOf("Pokhara"), String.valueOf("Pokhara"));
-
-
+        
+        Generic g1=new Generic();
+        Integer[] a=new Integer[]{12,12,34,35,23,54};
+        String[] b={"bin","binaye","binaya"};
+        g1.getArr(a);
+        g1.getArr(b);
     }
-
-
+    
 
 }
+
+/*In this program getArr is a generic fnx that can take different data types array
+ and perform the operation.
+  We have made two objs and passed two types of data as an argument.
+ */

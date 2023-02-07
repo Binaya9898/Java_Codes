@@ -10,12 +10,9 @@ public class FileRead{
         int count=0;
         while((line=Br.readLine())!=null){
             // String result=Br.readLine();
-            if(line.contains("I")){
+            if(line.contains("the")){
                 count++;
             }
-
-                
-
             }
             System.out.println(count);
 
